@@ -1,0 +1,55 @@
+/*
+ * Jumbotron
+ */
+
+ .hero {
+    display: flex;
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    text-align: center;
+    background: 
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(77, 75, 75, 0.7)
+        ), url("../../public/images/heros/hero-image_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c05555;
+}
+
+.hero__inner {
+    margin: 0 auto;
+    max-width: 800px;
+    width:100%;
+    padding: 0 30px;
+}
+
+.hero__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero__tagline {
+    color: #fff;
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 2em;
+    font-weight: 300;
+    font-family: 'Cabin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (min-width: 590px) {
+    .hero {
+        min-height: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hero {
+        min-height: 650px;
+        background-size: cover;
+    }
+}

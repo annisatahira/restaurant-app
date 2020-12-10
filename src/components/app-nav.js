@@ -14,7 +14,15 @@ class NavApp extends HTMLElement {
           <li class="nav__item"><a href="#">Favorite</a></li>
           <li class="nav__item"><a href="#">About Us</a></li>
         </ul>
-      </nav>`;
+      </nav>
+      <div class="hamburger-wrapper">
+        <button id="hamburger" href="#">☰</button>
+        <div class="mobile-logo-wrapper">
+          <img class="mobile-logo" src="./images/logo.png" alt="logo-yum-eat" />
+        </div>
+      </div>
+      
+      `;
     }
   }
   

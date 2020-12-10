@@ -21,6 +21,17 @@ module.exports = {
           },
         ],
       },
+      // url loader
+      {
+        test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 100000,
+            name: "[name].[ext]",
+          },
+        },
+      },
     ],
   },
   plugins: [
@@ -33,6 +44,14 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/public/'),
           to: path.resolve(__dirname, 'dist/'),
+        },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "**/*",
+          to: path.join(__dirname, "./dist"),
         },
       ],
     }),

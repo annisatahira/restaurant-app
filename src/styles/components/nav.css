@@ -148,6 +148,22 @@
   .nav__list{
     flex: 40;
   }
+
+  .logo {
+    height: 20px;
+  }
+
+  .nav__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    line-height: normal;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
